@@ -1,23 +1,23 @@
-// import { browser } from 'protractor';
-
 const helper = require('../utils/helper');
 const waiter = require('../utils/waiter');
 
-const examplePage = function () {
+let examplePage = function() {
     this.cookiesBar = $('#eu-cookie-notify-wrap');
     this.locator = $('#home');
-//   this.contextMenu = this.overlay.$('.c-context-menu__items-container')
-//   this.author = this.contextMenu.element(by.cssContainingText('.c-context-menu__item', 'Me'))
-};
-examplePage.prototype.openExamplePage = function () {
-    let self = this;
-    return browser.get('/')
-        .then(() => waiter.waitForElement(self.locator, 5000));
-};
-examplePage.prototype.acceptCookies = () => {
-    if (helper.isVisible(this.cookiesBar)) {
-        this.cookiesBar.click();
-    }
+    // const pageLogo = $('#header-logo');
+  
+    this.openExamplePage = () => {
+        return browser.get('/')
+            .then(() => waiter.waitForElement(this.locator, 5000));
+    };
+  
+    this.acceptCookies = () => {
+        if (this.cookiesBar.isPresent()) {
+            return this.cookiesBar.click();
+        } else {
+            console.log('No cookie message visible');
+        }
+    };
 };
 
-module.exports = examplePage;
+module.exports = new examplePage();

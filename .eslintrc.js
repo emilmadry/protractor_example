@@ -14,6 +14,7 @@ module.exports = {
         'brace-style': ['error', '1tbs', {'allowSingleLine': true}],
         'indent': ['error', 4, {'SwitchCase': 1, 'FunctionDeclaration': {'parameters': 'first'}}],
         'spaced-comment': ['error', 'always', {'exceptions': ['-', '+']}],
+        'no-console': 'off',
         'linebreak-style': [
             'error',
             'windows'
