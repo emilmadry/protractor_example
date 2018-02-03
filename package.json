@@ -1,0 +1,34 @@
+{
+  "name": "prototest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilmadry/protractor_example.git"
+  },
+  "keywords": [
+    "automation"
+  ],
+  "author": "emilmadry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilmadry/protractor_example/issues"
+  },
+  "homepage": "https://github.com/emilmadry/protractor_example#readme",
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jquery": "^1.3.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}

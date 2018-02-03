@@ -1,5 +1,14 @@
 exports.config = {
     framework: 'jasmine',
-    seleniumAddress: 'http://localhost:4444/wd/hub',
-    specs: ['../tests/spec.js']
-  }
+    drivers: {
+        chrome: {
+            version: '2.31',
+            arch: process.arch,
+            baseURL: 'https://www.accuweather.com'
+        }
+    },
+    specs: ['../tests/spec.js'],
+    capabilities: {
+        browserName: 'chrome'
+    }
+};
