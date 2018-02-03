@@ -7,7 +7,8 @@ exports.config = {
             baseURL: 'https://www.accuweather.com'
         }
     },
-    specs: ['../tests/spec.js'],
+    // specs: ['../tests/spec.js'],
+    specs: ['../tests/exampleTest.test.js'],
     capabilities: {
         browserName: 'chrome'
     }
